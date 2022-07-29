@@ -25,14 +25,11 @@ body {
 
         .navbar-nav {
             .dropdown {
-                display: flex;
-                background-color: $color-1;
-                border-radius: 0.5rem;
-
                 >a {
-                    display: inline-flex;
+                    display: flex;
+                    background-color: $color-1;
+                    border-radius: 0.5rem;
                     align-items: center;
-                    justify-content: center;
                     color: $white;
                 }
             }
