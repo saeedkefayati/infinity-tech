@@ -76,18 +76,24 @@ body {
         }
 
         .background-image-blur {
-            position: absolute;
-            width: 500px;
-            height: 500px;
-            background: linear-gradient(93.33deg, rgba(37, 34, 98, 0.4) 0%, rgba(16, 101, 162, 0.4) 100%);
-            filter: blur(100px);
-            z-index: -1;
+            @media screen and (max-width:992px) {
+                display: none;
+            }
+
+            @media screen and (min-width:992px) {
+                position: absolute;
+                width: 500px;
+                height: 500px;
+                background: linear-gradient(93.33deg, rgba(37, 34, 98, 0.4) 0%, rgba(16, 101, 162, 0.4) 100%);
+                filter: blur(100px);
+                z-index: -1;
+            }
         }
 
         .treatments-background {
             right: 0;
             top: 50%;
-            transform: translate(0, -50%) rotate(45deg);
+            transform: translate(-50%, -50%) rotate(45deg);
         }
 
         .treatments-card {
@@ -106,7 +112,7 @@ body {
         .tourist-background {
             left: 0;
             top: 100%;
-            transform: translate(0, -50%) rotate(45deg);
+            transform: translate(50%, -50%) rotate(45deg);
         }
 
         .card,
@@ -125,7 +131,7 @@ body {
         .weblog-background {
             right: 0;
             top: 100%;
-            transform: translate(0, -50%) rotate(45deg);
+            transform: translate(-50%, -50%) rotate(45deg);
         }
 
         .subscription {
