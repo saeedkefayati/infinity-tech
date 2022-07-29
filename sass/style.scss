@@ -83,27 +83,29 @@ body {
             filter: blur(100px);
         }
 
-        .treatments-intro {
-            position: relative;
+        .treatments-background {
+            right: 0;
+            top: 50%;
+            transform: translate(0, -50%) rotate(45deg);
+        }
 
-            .treatments-background {
-                right: 0;
-                top: 50%;
-                transform: translate(0, -50%) rotate(45deg);
-            }
-
-            .treatments-card {
-                figcaption {
-                    text-transform: capitalize;
-                    background: linear-gradient(85.6deg, rgba(24, 51, 101, 0.8) 0%, rgba(13, 122, 172, 0.8) 100%);
-                    backdrop-filter: blur(0.5rem);
-                    border-radius: 0 0 0.5rem 0.5rem;
-                }
+        .treatments-card {
+            figcaption {
+                text-transform: capitalize;
+                background: linear-gradient(85.6deg, rgba(24, 51, 101, 0.8) 0%, rgba(13, 122, 172, 0.8) 100%);
+                backdrop-filter: blur(0.5rem);
+                border-radius: 0 0 0.5rem 0.5rem;
             }
         }
 
         .linkedin {
             margin-top: 7.5rem;
+        }
+
+        .tourist-background {
+            left: 0;
+            top: 100%;
+            transform: translate(0, -50%) rotate(45deg);
         }
 
         .card,
