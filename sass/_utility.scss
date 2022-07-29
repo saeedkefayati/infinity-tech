@@ -9,3 +9,12 @@
 .ratio-custom {
     --bs-aspect-ratio: 135%;
 }
+
+@for $i from 1 through 6 {
+    .line-clamp-#{$i} {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: #{$i};
+    }
+}
