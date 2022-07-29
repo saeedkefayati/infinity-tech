@@ -85,6 +85,14 @@ body {
         .linkedin {
             margin-top: 7.5rem;
         }
+
+        .card {
+            transition: .3s all ease-in-out;
+
+            &:hover {
+                box-shadow: $card-shadow;
+            }
+        }
     }
 
     footer {
