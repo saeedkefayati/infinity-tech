@@ -2,6 +2,10 @@
 @import 'font';
 @import 'utility';
 
+:root {
+    --bs-border-color: #8E8E8E;
+}
+
 body {
     font-family: iranyekan, var(--bs-body-font-family);
     background-color: $white-2;
