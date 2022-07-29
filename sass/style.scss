@@ -81,6 +81,7 @@ body {
             height: 500px;
             background: linear-gradient(93.33deg, rgba(37, 34, 98, 0.4) 0%, rgba(16, 101, 162, 0.4) 100%);
             filter: blur(100px);
+            z-index: -1;
         }
 
         .treatments-background {
@@ -119,6 +120,12 @@ body {
             &:hover {
                 box-shadow: $card-shadow;
             }
+        }
+
+        .weblog-background {
+            right: 0;
+            top: 100%;
+            transform: translate(0, -50%) rotate(45deg);
         }
 
         .subscription {
