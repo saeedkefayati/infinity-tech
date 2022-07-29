@@ -6,6 +6,10 @@
     object-fit: cover !important;
 }
 
+.text-justify {
+    text-align: justify !important;
+}
+
 .ratio-custom {
     --bs-aspect-ratio: 135%;
 }

@@ -10,6 +10,10 @@
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
         integrity="sha256-8M+b2Hj+vy/2J5tZ9pYDHeuPD59KsaEZn1XXj3xVhjg=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.5.2/dist/css/glide.core.min.css"
+        integrity="sha256-bmdlmBAVo1Q6XV2cHiyaBuBfe9KgYQhCrfQmoRq8+Sg=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.5.2/dist/css/glide.theme.min.css"
+        integrity="sha256-GgTH00L+A55Lmho3ZMp7xhGf6UYkv8I/8wLyhLLDXjo=" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
@@ -410,9 +414,9 @@
         </section>
         <!-- End Our specialized health and tourism services -->
         <!-- Start User comments -->
-        <section>
+        <section class="testimental">
             <div class="container">
-                <h5 class="header lh-xl fw-bold mb-0">
+                <h5 class="header lh-xl fw-bold mb-0 mt-0">
                     User comments
                 </h5>
                 <div class="seprator mx-auto mt-1 mb-4">
@@ -429,6 +433,140 @@
                         <i class="bi bi-chevron-right"></i>
                     </div>
                 </section>
+            </div>
+            <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide">
+                            <div
+                                class="testimental-card position-relative d-flex flex-column align-items-center text-capitalize bg-white rounded-3 p-3">
+                                <svg class="quote-before" width="75" height="58" viewBox="0 0 75 58" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.09583 52.1707C2.80417 47.6124 0.5 42.4999 0.5 34.2124C0.5 19.629 10.7375 6.5582 25.625 0.0957031L29.3458 5.83737C15.45 13.354 12.7333 23.1082 11.65 29.2582C13.8875 28.0999 16.8167 27.6957 19.6875 27.9624C27.2042 28.6582 33.1292 34.829 33.1292 42.4999C33.1292 46.3676 31.5927 50.0769 28.8578 52.8119C26.1229 55.5468 22.4136 57.0832 18.5458 57.0832C16.4069 57.0645 14.2931 56.6206 12.3273 55.7772C10.3616 54.9338 8.58328 53.7079 7.09583 52.1707V52.1707ZM48.7625 52.1707C44.4708 47.6124 42.1667 42.4999 42.1667 34.2124C42.1667 19.629 52.4042 6.5582 67.2917 0.0957031L71.0125 5.83737C57.1167 13.354 54.4 23.1082 53.3167 29.2582C55.5542 28.0999 58.4833 27.6957 61.3542 27.9624C68.8708 28.6582 74.7958 34.829 74.7958 42.4999C74.7958 46.3676 73.2594 50.0769 70.5245 52.8119C67.7896 55.5468 64.0802 57.0832 60.2125 57.0832C58.0736 57.0645 55.9597 56.6206 53.994 55.7772C52.0283 54.9338 50.2499 53.7079 48.7625 52.1707V52.1707Z"
+                                        fill="#19346B" fill-opacity="0.1" />
+                                </svg>
+                                <img class="object-fit-cover rounded-circle" width="100" height="100"
+                                    src="./images/avatar.png" alt="avatar">
+                                <svg class="quote-after" width="75" height="58" viewBox="0 0 75 58" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M67.9042 5.8293C72.1958 10.3876 74.5 15.5001 74.5 23.7876C74.5 38.371 64.2625 51.4418 49.375 57.9043L45.6542 52.1626C59.55 44.646 62.2667 34.8918 63.35 28.7418C61.1125 29.9001 58.1833 30.3043 55.3125 30.0376C47.7958 29.3418 41.8708 23.171 41.8708 15.5001C41.8708 11.6324 43.4073 7.92305 46.1422 5.18815C48.8771 2.45324 52.5864 0.916794 56.4542 0.916794C58.5931 0.935486 60.7069 1.37944 62.6727 2.22281C64.6384 3.06618 66.4167 4.29213 67.9042 5.8293ZM26.2375 5.8293C30.5292 10.3876 32.8333 15.5001 32.8333 23.7876C32.8333 38.371 22.5958 51.4418 7.70833 57.9043L3.9875 52.1626C17.8833 44.646 20.6 34.8918 21.6833 28.7418C19.4458 29.9001 16.5167 30.3043 13.6458 30.0376C6.12917 29.3418 0.204163 23.171 0.204163 15.5001C0.204163 11.6324 1.74062 7.92305 4.47552 5.18815C7.21043 2.45324 10.9198 0.916794 14.7875 0.916794C16.9264 0.935486 19.0403 1.37944 21.006 2.22281C22.9717 3.06618 24.7501 4.29213 26.2375 5.8293Z"
+                                        fill="#19346B" fill-opacity="0.1" />
+                                </svg>
+                                <h5 class="fw-bold">daniel chaplin</h5>
+                                <h6 class="h5 fw-normal">They had excellent care!</h6>
+                                <p class="mb-0 text-justify">
+                                    PET, PET/CT, Gamma Knife, Cyber Knife, Rapid Arc, Tomotherapy. San Raffaele’s
+                                    Radiotherapy Unit was the first place. in Europe to install Tomotherapy in 2004.
+                                    Nowadays this Unit confirms to be one of the most experienced worldwide; it has
+                                    developed numerous protocols for cancer treatment of the prostate, breast, central
+                                    nervous system.
+                                </p>
+                                <hr class="w-100 my-2" />
+                                <div class="w-100 d-flex align-items-center justify-content-between text-muted">
+                                    <div class="d-inline-flex align-items-start">
+                                        <i class="bi bi-bounding-box me-2"></i>
+                                        <small>Neurosurgery</small>
+                                    </div>
+                                    <div class="d-inline-flex align-items-start">
+                                        <small>from Iraq</small>
+                                        <img class="ms-2" width="20" height="20"
+                                            src="https://countryflagsapi.com/svg/iq" alt="Iraq flag" />
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <div
+                                class="testimental-card position-relative d-flex flex-column align-items-center text-capitalize bg-white rounded-3 p-3">
+                                <svg class="quote-before" width="75" height="58" viewBox="0 0 75 58" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.09583 52.1707C2.80417 47.6124 0.5 42.4999 0.5 34.2124C0.5 19.629 10.7375 6.5582 25.625 0.0957031L29.3458 5.83737C15.45 13.354 12.7333 23.1082 11.65 29.2582C13.8875 28.0999 16.8167 27.6957 19.6875 27.9624C27.2042 28.6582 33.1292 34.829 33.1292 42.4999C33.1292 46.3676 31.5927 50.0769 28.8578 52.8119C26.1229 55.5468 22.4136 57.0832 18.5458 57.0832C16.4069 57.0645 14.2931 56.6206 12.3273 55.7772C10.3616 54.9338 8.58328 53.7079 7.09583 52.1707V52.1707ZM48.7625 52.1707C44.4708 47.6124 42.1667 42.4999 42.1667 34.2124C42.1667 19.629 52.4042 6.5582 67.2917 0.0957031L71.0125 5.83737C57.1167 13.354 54.4 23.1082 53.3167 29.2582C55.5542 28.0999 58.4833 27.6957 61.3542 27.9624C68.8708 28.6582 74.7958 34.829 74.7958 42.4999C74.7958 46.3676 73.2594 50.0769 70.5245 52.8119C67.7896 55.5468 64.0802 57.0832 60.2125 57.0832C58.0736 57.0645 55.9597 56.6206 53.994 55.7772C52.0283 54.9338 50.2499 53.7079 48.7625 52.1707V52.1707Z"
+                                        fill="#19346B" fill-opacity="0.1" />
+                                </svg>
+                                <img class="object-fit-cover rounded-circle" width="100" height="100"
+                                    src="./images/avatar.png" alt="avatar">
+                                <svg class="quote-after" width="75" height="58" viewBox="0 0 75 58" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M67.9042 5.8293C72.1958 10.3876 74.5 15.5001 74.5 23.7876C74.5 38.371 64.2625 51.4418 49.375 57.9043L45.6542 52.1626C59.55 44.646 62.2667 34.8918 63.35 28.7418C61.1125 29.9001 58.1833 30.3043 55.3125 30.0376C47.7958 29.3418 41.8708 23.171 41.8708 15.5001C41.8708 11.6324 43.4073 7.92305 46.1422 5.18815C48.8771 2.45324 52.5864 0.916794 56.4542 0.916794C58.5931 0.935486 60.7069 1.37944 62.6727 2.22281C64.6384 3.06618 66.4167 4.29213 67.9042 5.8293ZM26.2375 5.8293C30.5292 10.3876 32.8333 15.5001 32.8333 23.7876C32.8333 38.371 22.5958 51.4418 7.70833 57.9043L3.9875 52.1626C17.8833 44.646 20.6 34.8918 21.6833 28.7418C19.4458 29.9001 16.5167 30.3043 13.6458 30.0376C6.12917 29.3418 0.204163 23.171 0.204163 15.5001C0.204163 11.6324 1.74062 7.92305 4.47552 5.18815C7.21043 2.45324 10.9198 0.916794 14.7875 0.916794C16.9264 0.935486 19.0403 1.37944 21.006 2.22281C22.9717 3.06618 24.7501 4.29213 26.2375 5.8293Z"
+                                        fill="#19346B" fill-opacity="0.1" />
+                                </svg>
+                                <h5 class="fw-bold">daniel chaplin</h5>
+                                <h6 class="h5 fw-normal">They had excellent care!</h6>
+                                <p class="mb-0 text-justify">
+                                    PET, PET/CT, Gamma Knife, Cyber Knife, Rapid Arc, Tomotherapy. San Raffaele’s
+                                    Radiotherapy Unit was the first place. in Europe to install Tomotherapy in 2004.
+                                    Nowadays this Unit confirms to be one of the most experienced worldwide; it has
+                                    developed numerous protocols for cancer treatment of the prostate, breast, central
+                                    nervous system.
+                                </p>
+                                <hr class="w-100 my-2" />
+                                <div class="w-100 d-flex align-items-center justify-content-between text-muted">
+                                    <div class="d-inline-flex align-items-start">
+                                        <i class="bi bi-bounding-box me-2"></i>
+                                        <small>Neurosurgery</small>
+                                    </div>
+                                    <div class="d-inline-flex align-items-start">
+                                        <small>from Iraq</small>
+                                        <img class="ms-2" width="20" height="20"
+                                            src="https://countryflagsapi.com/svg/iq" alt="Iraq flag" />
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <div
+                                class="testimental-card position-relative d-flex flex-column align-items-center text-capitalize bg-white rounded-3 p-3">
+                                <svg class="quote-before" width="75" height="58" viewBox="0 0 75 58" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.09583 52.1707C2.80417 47.6124 0.5 42.4999 0.5 34.2124C0.5 19.629 10.7375 6.5582 25.625 0.0957031L29.3458 5.83737C15.45 13.354 12.7333 23.1082 11.65 29.2582C13.8875 28.0999 16.8167 27.6957 19.6875 27.9624C27.2042 28.6582 33.1292 34.829 33.1292 42.4999C33.1292 46.3676 31.5927 50.0769 28.8578 52.8119C26.1229 55.5468 22.4136 57.0832 18.5458 57.0832C16.4069 57.0645 14.2931 56.6206 12.3273 55.7772C10.3616 54.9338 8.58328 53.7079 7.09583 52.1707V52.1707ZM48.7625 52.1707C44.4708 47.6124 42.1667 42.4999 42.1667 34.2124C42.1667 19.629 52.4042 6.5582 67.2917 0.0957031L71.0125 5.83737C57.1167 13.354 54.4 23.1082 53.3167 29.2582C55.5542 28.0999 58.4833 27.6957 61.3542 27.9624C68.8708 28.6582 74.7958 34.829 74.7958 42.4999C74.7958 46.3676 73.2594 50.0769 70.5245 52.8119C67.7896 55.5468 64.0802 57.0832 60.2125 57.0832C58.0736 57.0645 55.9597 56.6206 53.994 55.7772C52.0283 54.9338 50.2499 53.7079 48.7625 52.1707V52.1707Z"
+                                        fill="#19346B" fill-opacity="0.1" />
+                                </svg>
+                                <img class="object-fit-cover rounded-circle" width="100" height="100"
+                                    src="./images/avatar.png" alt="avatar">
+                                <svg class="quote-after" width="75" height="58" viewBox="0 0 75 58" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M67.9042 5.8293C72.1958 10.3876 74.5 15.5001 74.5 23.7876C74.5 38.371 64.2625 51.4418 49.375 57.9043L45.6542 52.1626C59.55 44.646 62.2667 34.8918 63.35 28.7418C61.1125 29.9001 58.1833 30.3043 55.3125 30.0376C47.7958 29.3418 41.8708 23.171 41.8708 15.5001C41.8708 11.6324 43.4073 7.92305 46.1422 5.18815C48.8771 2.45324 52.5864 0.916794 56.4542 0.916794C58.5931 0.935486 60.7069 1.37944 62.6727 2.22281C64.6384 3.06618 66.4167 4.29213 67.9042 5.8293ZM26.2375 5.8293C30.5292 10.3876 32.8333 15.5001 32.8333 23.7876C32.8333 38.371 22.5958 51.4418 7.70833 57.9043L3.9875 52.1626C17.8833 44.646 20.6 34.8918 21.6833 28.7418C19.4458 29.9001 16.5167 30.3043 13.6458 30.0376C6.12917 29.3418 0.204163 23.171 0.204163 15.5001C0.204163 11.6324 1.74062 7.92305 4.47552 5.18815C7.21043 2.45324 10.9198 0.916794 14.7875 0.916794C16.9264 0.935486 19.0403 1.37944 21.006 2.22281C22.9717 3.06618 24.7501 4.29213 26.2375 5.8293Z"
+                                        fill="#19346B" fill-opacity="0.1" />
+                                </svg>
+                                <h5 class="fw-bold">daniel chaplin</h5>
+                                <h6 class="h5 fw-normal">They had excellent care!</h6>
+                                <p class="mb-0 text-justify">
+                                    PET, PET/CT, Gamma Knife, Cyber Knife, Rapid Arc, Tomotherapy. San Raffaele’s
+                                    Radiotherapy Unit was the first place. in Europe to install Tomotherapy in 2004.
+                                    Nowadays this Unit confirms to be one of the most experienced worldwide; it has
+                                    developed numerous protocols for cancer treatment of the prostate, breast, central
+                                    nervous system.
+                                </p>
+                                <hr class="w-100 my-2" />
+                                <div class="w-100 d-flex align-items-center justify-content-between text-muted">
+                                    <div class="d-inline-flex align-items-start">
+                                        <i class="bi bi-bounding-box me-2"></i>
+                                        <small>Neurosurgery</small>
+                                    </div>
+                                    <div class="d-inline-flex align-items-start">
+                                        <small>from Iraq</small>
+                                        <img class="ms-2" width="20" height="20"
+                                            src="https://countryflagsapi.com/svg/iq" alt="Iraq flag" />
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                        <i class="bi bi-chevron-left"></i>
+                    </button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                        <i class="bi bi-chevron-right"></i>
+                    </button>
+                </div>
             </div>
         </section>
         <!-- End User comments -->
@@ -615,6 +753,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.5.2/dist/glide.min.js"
+        integrity="sha256-cXguqBvlUaDoW4nGjs4YamNC2mlLGJUOl64bhts/ztU=" crossorigin="anonymous"></script>
     <script src="./js/master.js"></script>
 </body>
 

@@ -115,6 +115,43 @@ body {
             transform: translate(50%, -50%) rotate(45deg);
         }
 
+        .testimental {
+            background-color: rgba(25, 52, 107, 0.1);
+            padding: 4rem 0;
+
+            .testimental-card {
+                margin-top: 3.5rem;
+
+                .quote-before,
+                .quote-after {
+                    display: inline-flex;
+                    position: absolute;
+                    top: 1.5rem;
+                }
+
+                .quote-before {
+                    left: .75rem;
+                }
+
+                .quote-after {
+                    right: .75rem;
+                }
+
+                >img {
+                    margin: -3.5rem auto .75rem;
+                }
+
+                h5,
+                h6 {
+                    color: $color-1;
+                }
+
+                p {
+                    color: $black-2;
+                }
+            }
+        }
+
         .card,
         .card-hover {
             transition: 0.3s all ease-in-out;
@@ -218,4 +255,19 @@ body {
         justify-content: center;
         align-items: center;
     }
+}
+
+.glide__arrows {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.glide__arrow {
+    padding: 8px;
+    position: initial;
+    transform: none;
+    border: none;
+    display: inline-flex;
+    background-color: $color-1;
+    border-radius: .5rem;
 }
