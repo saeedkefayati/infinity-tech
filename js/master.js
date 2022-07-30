@@ -1,6 +1,6 @@
 new Glide('.glide', {
 	type: 'carousel',
-	startAt: 1,
+	startAt: 0,
 	perView: 2,
 	focusAt: 'center',
 	gap: 24,
