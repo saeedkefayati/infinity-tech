@@ -25,6 +25,7 @@ body {
 
         .navbar-brand {
             span {
+                font-weight: 900;
                 background: linear-gradient(89.92deg, #1C336C 0.23%, #008EC7 100.1%);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
@@ -95,7 +96,7 @@ body {
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                     background-clip: text;
-                    text-shadow: 0px 8px 24px #FFFFFF;
+                    //text-shadow: 0px 8px 24px #FFFFFF;
                     font-weight: 900;
                 }
             }
@@ -296,114 +297,235 @@ body {
             }
         }
 
-        .card,
-        .card-hover {
-            transition: 0.3s all ease-in-out;
+        .services {
+            margin-bottom: 7.5rem;
+
+            @media screen and (max-width:992px) {
+                margin-bottom: 5rem;
+            }
+
+            @media screen and (max-width:576px) {
+                margin-bottom: 3rem;
+            }
+
+            h5 {
+                color: #575757;
+            }
+
+            .background-style {
+                height: 25rem;
+                margin-top: 7.75rem;
+
+                & {
+                    @media screen and (max-width:992px) {
+                        margin-top: 15rem;
+                    }
+
+                    @media screen and (max-width:768px) {
+                        margin-top: 6rem;
+                    }
+
+                    @media screen and (max-width:576px) {
+                        height: auto;
+                    }
+                }
+            }
+
+            img {
+                width: 90%;
+                left: auto;
+                right: 0;
+                top: auto;
+                bottom: 7.75rem;
+
+                @media screen and (max-width:1400px) {
+                    bottom: 3.25rem;
+                }
+
+                @media screen and (max-width:1200px) {
+                    bottom: -1.5rem;
+                }
+
+                @media screen and (max-width:992px) {
+                    bottom: 18.5rem;
+                }
+
+                @media screen and (max-width:768px) {
+                    bottom: 7.25rem;
+                }
+
+                @media screen and (max-width:576px) {
+                    bottom: 0;
+                }
+            }
+        }
+
+        .transfrom-service {
+            @media screen and (min-width:992px) {
+                transform: translateY(3.125rem);
+            }
+        }
+
+        .services-card {
+            transition: .3s all ease-in-out;
+            margin-bottom: 5rem;
+
+            &:hover {
+                filter: drop-shadow(0px 4px 24px rgba(25, 52, 107, 0.25));
+
+                path {
+                    fill: $color-2;
+                }
+            }
+
+            .avatar {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 6.25rem;
+                height: 6.25rem;
+                margin: -3.5rem auto .75rem;
+                background-color: $color-1;
+                box-shadow: 0px 4px 16px rgba(25, 52, 107, 0.5);
+            }
 
             h5 {
                 color: $color-1;
             }
 
-            &:hover {
-                box-shadow: $card-shadow;
+            p {
+                color: $black-2;
             }
         }
+    }
 
-        .weblog-background {
-            right: 0;
-            top: 100%;
-            transform: translate(-50%, -50%) rotate(45deg);
+    .weblog-background {
+        right: 0;
+        top: 100%;
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    .subscription {
+        margin: 12rem auto;
+
+        @media screen and (max-width:992px) {
+            margin: 9rem auto;
         }
 
-        .subscription {
-            margin: 12rem auto;
+        @media screen and (max-width:576px) {
+            margin: 6rem auto;
+        }
 
-            @media screen and (max-width:992px) {
-                margin: 9rem auto;
+        .email-subscription {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            padding: 3.75rem 1rem;
+
+            @media screen and (min-width:992px) {
+                width: 80%;
             }
 
+
+
+            h5 {
+                color: $color-1;
+            }
+
+            div {
+                min-width: 45%;
+
+                input,
+                button {
+                    padding: 0.75rem 1.5rem;
+                }
+
+                input {
+                    box-shadow: $card-shadow;
+                }
+            }
+        }
+    }
+
+    .background-style {
+        position: relative;
+        background: $white-2;
+        box-shadow: $card-shadow;
+        border-radius: 0.5rem;
+
+        & {
             @media screen and (max-width:576px) {
-                margin: 6rem auto;
-            }
-
-            .email-subscription {
-                position: relative;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                margin: auto;
-                background: $white-2;
-                box-shadow: $card-shadow;
-                border-radius: 0.5rem;
-                padding: 3.75rem 1rem;
-
-                @media screen and (min-width:992px) {
-                    width: 80%;
-                }
-
-                &::before,
-                &::after {
-                    content: '';
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    right: 0;
-                    bottom: 0;
-                    border-radius: .5rem;
-                    z-index: -1;
-                }
-
-                &::before {
-                    background: linear-gradient(93.33deg, rgba(37, 34, 98, 0.75) 0%, rgba(16, 101, 162, 0.75) 100%);
-                    transform: rotate(-3deg);
-
-                }
-
-                &::after {
-                    background: linear-gradient(93.33deg, rgba(37, 34, 98, 0.25) 0%, rgba(16, 101, 162, 0.25) 100%);
-                    transform: rotate(-6deg);
-                }
-
-                h5 {
-                    color: $color-1;
-                }
-
-                div {
-                    min-width: 45%;
-
-                    input,
-                    button {
-                        padding: 0.75rem 1.5rem;
-                    }
-
-                    input {
-                        box-shadow: $card-shadow;
-                    }
-                }
+                width: 90%;
+                margin-left: auto;
+                margin-right: auto;
             }
         }
 
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: .5rem;
+            z-index: -1;
+        }
 
-    }
+        &::before {
+            background: linear-gradient(93.33deg, rgba(37, 34, 98, 0.75) 0%, rgba(16, 101, 162, 0.75) 100%);
+            transform: rotate(-3deg);
 
-    footer {
-        .copyright {
-            background: rgba(0, 0, 0, 0.7);
-            backdrop-filter: blur(1.25rem);
+        }
 
-            small {
-                color: #dddddd;
-            }
+        &::after {
+            background: linear-gradient(93.33deg, rgba(37, 34, 98, 0.25) 0%, rgba(16, 101, 162, 0.25) 100%);
+            transform: rotate(-6deg);
         }
     }
 
-    .bi {
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
+}
+
+footer {
+    .copyright {
+        background: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(1.25rem);
+
+        small {
+            color: #dddddd;
+        }
     }
 }
+
+.card,
+.card-hover {
+    transition: 0.3s all ease-in-out;
+
+    h5 {
+        color: $color-1;
+    }
+
+    &:hover {
+        box-shadow: $card-shadow;
+    }
+}
+
+
+.card-drop-hover {
+    &:hover {
+        filter: drop-shadow($card-shadow);
+    }
+}
+
+.bi {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 @media screen and (max-width:576px) {

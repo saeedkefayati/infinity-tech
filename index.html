@@ -19,7 +19,7 @@
 
 <body>
     <!-- Start Header -->
-    <header>
+    <header class="position-relative">
         <nav class="navbar navbar-expand-lg">
             <section class="container">
                 <a class="navbar-brand me-0 d-inline-flex align-items-center" href="./index.html">
@@ -54,7 +54,27 @@
                         <li class="nav-item mx-2 dropdown">
                             <a class="nav-link dropdown-toggle py-1 px-2" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                En
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_25_113)">
+                                        <path
+                                            d="M9.50003 13.5H13.5C13.9943 13.5 14.4143 13.3885 14.763 13.1943L9.50003 10.0548V13.5ZM15.915 11.5525C15.972 11.2983 16.001 11.029 16.001 10.7498V9.49975H12.4735L15.914 11.5525H15.915ZM0.0875297 4.43975C0.0282806 4.70573 -0.00106809 4.9775 2.96896e-05 5.25V6.5H3.54103L0.0875297 4.43975ZM6.50003 2.5H2.50003C2.00928 2.5 1.59203 2.61 1.24478 2.8015L6.50003 5.9365V2.5ZM1.26078 13.2065C1.60478 13.3925 2.01653 13.5 2.50003 13.5H6.50003V10.081L1.26078 13.2065ZM2.96896e-05 9.5V10.75C2.96896e-05 11.0378 0.0305297 11.315 0.0907797 11.5758L3.57053 9.5H2.96896e-05ZM14.7788 2.81375C14.4273 2.61425 14.0015 2.5 13.5 2.5H9.50003V5.96275L14.7788 2.81375ZM16 6.5V5.25C16 4.9765 15.9718 4.71275 15.917 4.46325L12.503 6.5H16Z"
+                                            fill="#2E3192" />
+                                        <path
+                                            d="M12.503 6.5L15.917 4.46325C15.7605 3.74725 15.3795 3.1545 14.7788 2.81375L9.5 5.96275V2.5H9V7H16V6.5H12.503ZM0 9V9.5H3.5705L0.09075 11.5758C0.256 12.2895 0.6485 12.8755 1.26075 13.2065L6.5 10.081V13.5H7V9H0ZM16 9H9V13.5H9.5V10.0548L14.763 13.1945C15.3682 12.8575 15.754 12.268 15.914 11.553L12.4735 9.5H16V9ZM6.5 2.5V5.9365L1.24475 2.8015C0.63725 3.1365 0.249 3.725 0.08725 4.43975L3.541 6.5H0V7H7V2.5H6.5Z"
+                                            fill="#E6E7E8" />
+                                        <path d="M9 7V2.5H7V7H0V9H7V13.5H9V9H16V7H9Z" fill="#BE1E2D" />
+                                        <path
+                                            d="M5.48455 6.50003L0.472049 3.50778C0.364299 3.66778 0.277799 3.84378 0.206299 4.03128L4.34305 6.50003H5.4838H5.48455ZM15.7725 12.0225L11.5693 9.50003H10.4053L15.4835 12.5548C15.6013 12.3902 15.6984 12.2118 15.7725 12.0235V12.0225ZM15.1798 3.09778L9.4923 6.50003L10.647 6.50078L15.5548 3.56253C15.4453 3.36328 15.3298 3.23478 15.1798 3.09778ZM0.453299 12.4688C0.565757 12.6401 0.701092 12.7952 0.855549 12.9298L6.5158 9.50003H5.37505L0.453299 12.4688Z"
+                                            fill="#BE1E2D" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_25_113">
+                                            <rect width="16" height="16" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                <span class="ms-3">En</span>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end">
                                 <li><a class="dropdown-item" href="#">Ar</a></li>
@@ -80,9 +100,11 @@
                         quality medical and tourism services.
                     </p>
                     <div>
-                        <button type="button" class="btn btn-primary py-3 px-5 fw-semibold me-3">Get Started</button>
+                        <button type="button" class="btn btn-primary py-3 px-5 fw-semibold me-3">
+                            Get Started
+                        </button>
                         <button type="button"
-                            class="btn btn-link py-3 px-5 fw-semibold text-decoration-none text-white">
+                            class="d-inline-flex align-items-center btn btn-link py-3 px-5 fw-semibold text-decoration-none text-white">
                             <span>Contact Us</span>
                             <i class="bi bi-chevron-right ms-2"></i>
                         </button>
@@ -157,7 +179,7 @@
             <div class="container">
                 <div class="row gy-4 mb-4">
                     <div class="col-md-6 col-lg-8">
-                        <figure class="d-flex treatments-card position-relative mb-0 h-100">
+                        <figure class="card-drop-hover d-flex treatments-card position-relative mb-0 h-100">
                             <img src="./images/treatments-1.png" class="img-fluid rounded-3 object-fit-cover"
                                 alt="card-treatments">
                             <figcaption
@@ -167,14 +189,14 @@
                         </figure>
                     </div>
                     <div class="col-md-6 col-lg-4 d-grid">
-                        <figure class="d-flex treatments-card position-relative mb-4">
+                        <figure class="card-drop-hover d-flex treatments-card position-relative mb-4">
                             <img src="./images/treatments-2.png" class="img-fluid rounded-3" alt="card-treatments">
                             <figcaption
                                 class="fs-6 fw-bold py-2 text-white text-center position-absolute bottom-0 w-100">
                                 Cardio surgery
                             </figcaption>
                         </figure>
-                        <figure class="d-flex treatments-card position-relative mb-0">
+                        <figure class="card-drop-hover d-flex treatments-card position-relative mb-0">
                             <img src="./images/treatments-3.png" class="img-fluid rounded-3" alt="card-treatments">
                             <figcaption
                                 class="fs-6 fw-bold py-2 text-white text-center position-absolute bottom-0 w-100">
@@ -185,7 +207,7 @@
                 </div>
                 <div class="row gy-4">
                     <div class="col-md-6 col-lg-3">
-                        <figure class="d-flex treatments-card position-relative mb-0 h-100">
+                        <figure class="card-drop-hover d-flex treatments-card position-relative mb-0 h-100">
                             <img src="./images/treatments-4.png" class="img-fluid rounded-3" alt="card-treatments">
                             <figcaption
                                 class="fs-6 fw-bold py-2 text-white text-center position-absolute bottom-0 w-100">
@@ -194,7 +216,7 @@
                         </figure>
                     </div>
                     <div class="col-md-6 col-lg-3">
-                        <figure class="d-flex treatments-card position-relative mb-0 h-100">
+                        <figure class="card-drop-hover d-flex treatments-card position-relative mb-0 h-100">
                             <img src="./images/treatments-5.png" class="img-fluid rounded-3" alt="card-treatments">
                             <figcaption
                                 class="fs-6 fw-bold py-2 text-white text-center position-absolute bottom-0 w-100">
@@ -203,7 +225,7 @@
                         </figure>
                     </div>
                     <div class="col-md-6 col-lg-3">
-                        <figure class="d-flex treatments-card position-relative mb-0 h-100">
+                        <figure class="card-drop-hover d-flex treatments-card position-relative mb-0 h-100">
                             <img src="./images/treatments-6.png" class="img-fluid rounded-3" alt="card-treatments">
                             <figcaption
                                 class="fs-6 fw-bold py-2 text-white text-center position-absolute bottom-0 w-100">
@@ -212,7 +234,7 @@
                         </figure>
                     </div>
                     <div class="col-md-6 col-lg-3">
-                        <figure class="d-flex treatments-card position-relative mb-0 h-100">
+                        <figure class="card-drop-hover d-flex treatments-card position-relative mb-0 h-100">
                             <img src="./images/treatments-7.png" class="img-fluid rounded-3" alt="card-treatments">
                             <figcaption
                                 class="fs-6 fw-bold py-2 text-white text-center position-absolute bottom-0 w-100">
@@ -469,10 +491,120 @@
             <h5 class="header lh-xl fw-bold mb-0">
                 Our specialized health and tourism services
             </h5>
-            <div class="seprator mx-auto mt-1 mb-4">
+            <div class="seprator mx-auto mt-1 mb-5 mb-lg-4">
                 <svg class="mx-2" height="10" width="10">
                     <circle cx="5" cy="5" r="5" fill="#0188C0" />
                 </svg>
+            </div>
+            <div class="row services">
+                <div class="col-lg-5 order-1 order-lg-0">
+                    <div class="background-style mb-5">
+                        <div class="ratio ratio-1x1">
+                            <img class="img-fluid object-fit-cover" src="./images/services-avatar.png" alt="">
+                        </div>
+                    </div>
+                    <h5 class="mb-3">
+                        For accommodation, logistics, translator or any other travel needs, you can choose one of the
+                        authorized travel operators or facilitators and contact them.For translator or any other travel
+                    </h5>
+                    <button class="d-inline-flex align-items-center btn btn-primary px-4 py-3">
+                        <span>View all services</span>
+                        <i class="bi bi-chevron-right ms-2"></i>
+                    </button>
+                </div>
+                <div class="col-lg-1 d-none d-lg-block"></div>
+                <div class="col-lg-3 transfrom-service">
+                    <div
+                        class="services-card position-relative d-flex flex-column align-items-center text-capitalize bg-white rounded-3 p-3 mt-4">
+                        <div class="avatar rounded-circle">
+                            <svg width="37" height="48" viewBox="0 0 37 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M34.323 11.7469L24.3387 1.7625C23.2043 0.632062 21.6855 0 20.0918 0H6.07617C2.76211 0 0.0761719 2.68594 0.0761719 6L0.0767813 42C0.0767813 45.3141 2.76272 48 6.07678 48H30.0762C33.3902 48 36.0762 45.3141 36.0762 42V15.9844C36.0762 14.3906 35.448 12.8719 34.323 11.7469ZM21.0762 3.195C21.4959 3.34181 21.8886 3.55556 22.2124 3.87928L32.1968 13.8637C32.523 14.1844 32.7387 14.5781 32.8793 15H22.5762C21.7512 15 21.0762 14.325 21.0762 13.5V3.195ZM25.5762 45H10.5762V43.5C10.5762 41.0156 12.5918 39 15.0762 39H21.0762C23.5615 39 25.5762 41.0147 25.5762 43.5V45ZM33.0762 42C33.0762 43.6538 31.7299 45 30.0762 45H28.5762V43.5C28.5762 39.3581 25.218 36 21.0762 36H15.0762C10.9343 36 7.57617 39.3581 7.57617 43.5V45H6.07617C4.42242 45 3.07617 43.6538 3.07617 42V6C3.07617 4.34625 4.42242 3 6.07617 3H18.0762V13.5C18.0762 15.9844 20.0918 18 22.5762 18H33.0762V42ZM18.0762 21C14.7668 21 12.0762 23.6906 12.0762 27C12.0762 30.3094 14.7621 33 18.0762 33C21.3902 33 24.0762 30.3141 24.0762 27C24.0762 23.6859 21.3855 21 18.0762 21ZM18.0762 30C16.4224 30 15.0762 28.6537 15.0762 27C15.0762 25.3463 16.4224 24 18.0762 24C19.7299 24 21.0762 25.3463 21.0762 27C21.0762 28.6537 19.7262 30 18.0762 30Z"
+                                    fill="#ffffff" />
+                            </svg>
+                        </div>
+                        <h5 class="fw-bold text-center line-clamp-1">Patients being treated</h5>
+                        <p class="mb-0 line-clamp-6">
+                            You can contact online patients who have already experienced treatment at a recommended
+                            clinic
+                            or
+                            hospital and find out what they think about the platform.
+                        </p>
+                    </div>
+                    <div
+                        class="services-card position-relative d-flex flex-column align-items-center text-capitalize bg-white rounded-3 p-3 mt-4">
+                        <div class="avatar rounded-circle">
+                            <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_97_98)">
+                                    <path
+                                        d="M22.6793 23.4469L18.5543 33.7594L16.548 23.7094C16.3869 22.8979 15.6002 22.3659 14.7827 22.5328C13.9699 22.6875 13.443 23.4844 13.6052 24.2906L16.6052 39.2906C16.7356 39.9411 17.2776 40.4287 17.9384 40.4906C18.618 40.5521 19.2227 40.1698 19.4693 39.5531L24.0762 28.0406L28.683 39.5625C28.9137 40.1344 29.4668 40.5 30.0762 40.5C30.1216 40.5 30.167 40.4985 30.2139 40.4941C30.8745 40.4326 31.4167 39.9449 31.547 39.2941L34.547 24.2941C34.7096 23.4811 34.1822 22.692 33.3705 22.5288C32.5472 22.359 31.7664 22.8921 31.6051 23.7054L29.5942 33.7554L25.4692 23.4429C24.9293 22.3031 23.1387 22.3031 22.6793 23.4469ZM40.323 11.7469L30.3387 1.7625C29.2043 0.632062 27.6855 0 26.0918 0H12.0762C8.76211 0 6.07617 2.68594 6.07617 6L6.07678 42C6.07678 45.3141 8.76272 48 12.0768 48H36.0762C39.3902 48 42.0762 45.3141 42.0762 42V15.9844C42.0762 14.3906 41.448 12.8719 40.323 11.7469ZM27.0762 3.195C27.4959 3.34181 27.8886 3.55556 28.2124 3.87928L38.1968 13.8637C38.523 14.1844 38.7387 14.5781 38.8793 15H28.5762C27.7512 15 27.0762 14.325 27.0762 13.5V3.195ZM39.0762 42C39.0762 43.6538 37.7299 45 36.0762 45H12.0762C10.4224 45 9.07617 43.6538 9.07617 42V6C9.07617 4.34625 10.4224 3 12.0762 3H24.0762V13.5C24.0762 15.9844 26.0918 18 28.5762 18H39.0762V42Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_97_98">
+                                        <rect width="36" height="48" fill="white" transform="translate(6.07617)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h5 class="fw-bold text-center line-clamp-1">Tourist services</h5>
+                        <p class="mb-0 line-clamp-6">
+                            For accommodation, logistics, translator or any other travel needs, you can choose one of
+                            the authorized travel operators or facilitators and contact them.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div
+                        class="services-card position-relative d-flex flex-column align-items-center text-capitalize bg-white rounded-3 p-3 mt-4">
+                        <div class="avatar rounded-circle">
+                            <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_97_97)">
+                                    <path
+                                        d="M40.323 11.7469L30.3387 1.7625C29.2043 0.632062 27.6855 0 26.0918 0H12.0762C8.76211 0 6.07617 2.68594 6.07617 6L6.07678 42C6.07678 45.3141 8.76272 48 12.0768 48H36.0762C39.3902 48 42.0762 45.3141 42.0762 42V15.9844C42.0762 14.3906 41.448 12.8719 40.323 11.7469ZM27.0762 3.195C27.4959 3.34181 27.8886 3.55556 28.2124 3.87928L38.1968 13.8637C38.523 14.1844 38.7387 14.5781 38.8793 15H28.5762C27.7512 15 27.0762 14.325 27.0762 13.5V3.195ZM39.0762 42C39.0762 43.6538 37.7299 45 36.0762 45H12.0762C10.4224 45 9.07617 43.6538 9.07617 42V6C9.07617 4.34625 10.4224 3 12.0762 3H24.0762V13.5C24.0762 15.9844 26.0918 18 28.5762 18H39.0762V42ZM15.0762 33C14.247 33 13.5762 33.6709 13.5762 34.5V40.5C13.5762 41.325 14.2474 42 15.0762 42C15.9049 42 16.5762 41.3291 16.5762 40.5V34.5C16.5762 33.675 15.9012 33 15.0762 33ZM24.0762 21C23.2512 21 22.5762 21.675 22.5762 22.5V40.5C22.5762 41.3291 23.247 42 24.0762 42C24.9053 42 25.5762 41.3291 25.5762 40.5V22.5C25.5762 21.675 24.9012 21 24.0762 21ZM33.0762 42C33.9053 42 34.5762 41.3291 34.5762 40.5V28.5C34.5762 27.675 33.9012 27 33.0762 27C32.2512 27 31.5762 27.6709 31.5762 28.5V40.5C31.5762 41.325 32.2512 42 33.0762 42Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_97_97">
+                                        <rect width="36" height="48" fill="white" transform="translate(6.07617)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h5 class="fw-bold text-center line-clamp-1">The most modern network</h5>
+                        <p class="mb-0 line-clamp-6">
+                            If you are a facilitator, you can register at Infinity tech, you will have access to
+                            training
+                            courses, B2B, workshops and family travel programs around the world.
+                        </p>
+                    </div>
+                    <div
+                        class="services-card position-relative d-flex flex-column align-items-center text-capitalize bg-white rounded-3 p-3 mt-4">
+                        <div class="avatar rounded-circle">
+                            <svg width="49" height="48" viewBox="0 0 49 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_97_118)">
+                                    <path
+                                        d="M40.323 11.7469L30.3387 1.7625C29.2043 0.632062 27.6855 0 26.0918 0H12.0762C8.76211 0 6.07617 2.68594 6.07617 6L6.07678 42C6.07678 45.3141 8.76272 48 12.0768 48H36.0762C39.3902 48 42.0762 45.3141 42.0762 42V15.9844C42.0762 14.3906 41.448 12.8719 40.323 11.7469ZM27.0762 3.195C27.4959 3.34181 27.8886 3.55556 28.2124 3.87928L38.1968 13.8637C38.523 14.1844 38.7387 14.5781 38.8793 15H28.5762C27.7512 15 27.0762 14.325 27.0762 13.5V3.195ZM39.0762 42C39.0762 43.6538 37.7299 45 36.0762 45H12.0762C10.4224 45 9.07617 43.6538 9.07617 42V6C9.07617 4.34625 10.4224 3 12.0762 3H24.0762V13.5C24.0762 15.9844 26.0918 18 28.5762 18H39.0762V42ZM18.0762 22.5C17.2512 22.5 16.5762 23.175 16.5762 24V40.5C16.5762 41.325 17.2512 42 18.0762 42C18.9012 42 19.5762 41.3291 19.5762 40.5V36H24.8262C28.5471 36 31.5762 32.9719 31.5762 29.25C31.5762 25.5281 28.548 22.5 24.8262 22.5H18.0762ZM28.5762 29.25C28.5762 31.3181 26.8943 33 24.8262 33H19.5762V25.5H24.8262C26.898 25.5 28.5762 27.1781 28.5762 29.25Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_97_118">
+                                        <rect width="36" height="48" fill="white" transform="translate(6.07617)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h5 class="fw-bold text-center line-clamp-1">Easy turn taking</h5>
+                        <p class="mb-0 line-clamp-6">
+                            You can choose the most suitable time in the free slots and you will immediately receive an
+                            invoice and confirmation of your appointment.
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- End Our specialized health and tourism services -->
@@ -765,7 +897,7 @@
         <!-- Start Email Subscription -->
         <section class="container">
             <section class="subscription">
-                <div class="email-subscription">
+                <div class="email-subscription background-style">
                     <h5 class="fw-bold text-center text-capitalize mb-4">Enter your email address and receive our latest
                         news</h5>
                     <div class="d-flex align-items-center mt-2">
@@ -781,6 +913,9 @@
     <!-- End Main -->
     <!-- Start Footer -->
     <footer>
+        <div class="container">
+
+        </div>
         <div class="copyright py-3">
             <section class="container">
                 <div class="d-flex flex-wrap justify-content-center justify-content-md-between align-items-center">
