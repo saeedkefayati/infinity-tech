@@ -19,11 +19,11 @@
 
 <body>
     <!-- Start Header -->
-    <header>
+    <header class="position-relative">
         <nav class="navbar navbar-expand-lg bg-transparent">
             <section class="container">
                 <a class="navbar-brand me-0 d-inline-flex align-items-center" href="./index.html">
-                    <img width="40" height="30" src="./images/logo.png" alt="logo image">
+                    <img class="object-fit-contain" width="40" height="30" src="./images/logo.png" alt="logo image">
                     <span class="fs-6 text-uppercase ms-1">infinity tech</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -52,8 +52,8 @@
                             <a class="nav-link" href="#">Work with us</a>
                         </li>
                         <li class="nav-item mx-2 dropdown">
-                            <a class="nav-link dropdown-toggle py-1 px-2" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                            <a class="nav-link dropdown-toggle py-1 px-2" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 En
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end">
@@ -69,9 +69,10 @@
     <!-- End Header -->
     <!-- Start Main -->
     <main>
+        <div class="intro"></div>
         <!-- Start Intro -->
         <section class="container">
-            <div class="intro">
+            <div class="intro-inner">
                 <div class="box">
                     <svg width="60" height="48" viewBox="0 0 60 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -100,7 +101,7 @@
                     <h5 class="fw-bold">760</h5>
                 </div>
                 <div class="box">
-                    <svg width="60" height="42" viewBox="0 0 60 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="60" height="48" viewBox="0 0 60 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M49.5 9H25.5C24.675 9 24 9.675 24 10.5V27H3V1.5C3 0.675 2.325 0 1.5 0C0.675 0 0 0.675 0 1.5V40.5C0 41.325 0.674906 42 1.5 42C2.32509 42 3 41.325 3 40.5V36H57V40.5C57 41.3251 57.6749 42 58.5 42C59.3251 42 60 41.3251 60 40.5V19.5C60 13.6969 55.3031 9 49.5 9ZM57 33H3V30H57V33ZM57 27H27V12H49.5C53.6344 12 57 15.3656 57 19.5V27ZM13.5 24C17.6344 24 21 20.6344 21 16.5C21 12.3656 17.6344 9 13.5 9C9.36563 9 6 12.3656 6 16.5C6 20.6344 9.36375 24 13.5 24ZM13.5 12C15.9844 12 18 14.0156 18 16.5C18 18.9844 15.9844 21 13.5 21C11.0156 21 9 18.9844 9 16.5C9 14.0156 11.0156 12 13.5 12Z"
                             fill="#74F7FF" />
@@ -232,7 +233,7 @@
                         </div>
                         <div class="card-body text-capitalize">
                             <h5 class="card-title">pars hospital</h5>
-                            <p class="card-text">
+                            <p class="card-text line-clamp-3">
                                 It was established by the efforts of a group of young doctors who completed their
                                 specialized education in America and Europe.
                             </p>
@@ -262,7 +263,7 @@
                         </div>
                         <div class="card-body text-capitalize">
                             <h5 class="card-title">Bahman Hospital</h5>
-                            <p class="card-text">
+                            <p class="card-text line-clamp-3">
                                 With less than ten years of experience and in the vicinity of famous hospitals, it has
                                 managed to have a well-known brand.
                             </p>
@@ -292,7 +293,7 @@
                         </div>
                         <div class="card-body text-capitalize">
                             <h5 class="card-title">Razavi Hospital</h5>
-                            <p class="card-text">
+                            <p class="card-text line-clamp-3">
                                 Established in 2005 the facility covers 56,000 square metres and caters for patients
                                 with a wide range of medical conditions.
                             </p>
