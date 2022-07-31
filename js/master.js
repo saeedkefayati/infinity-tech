@@ -1,3 +1,14 @@
+const goToTopButton = document.querySelector('.go-to--top');
+
+const goToTopFunc = () => {
+	window.scrollTo({
+		top: 0,
+		behavior: 'smooth',
+	});
+};
+
+goToTopButton.addEventListener('click', goToTopFunc);
+
 new Glide('.glide', {
 	type: 'carousel',
 	startAt: 0,

@@ -400,108 +400,173 @@ body {
                 color: $black-2;
             }
         }
-    }
 
-    .weblog-background {
-        right: 0;
-        top: 100%;
-        transform: translate(-50%, -50%) rotate(45deg);
-    }
-
-    .subscription {
-        margin: 12rem auto;
-
-        @media screen and (max-width:992px) {
-            margin: 9rem auto;
+        .weblog-background {
+            right: 0;
+            top: 100%;
+            transform: translate(-50%, -50%) rotate(45deg);
         }
 
-        @media screen and (max-width:576px) {
-            margin: 6rem auto;
-        }
+        .subscription {
+            margin: 12rem auto;
 
-        .email-subscription {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            margin: auto;
-            padding: 3.75rem 1rem;
-
-            @media screen and (min-width:992px) {
-                width: 80%;
+            @media screen and (max-width:992px) {
+                margin: 9rem auto;
             }
 
-
-
-            h5 {
-                color: $color-1;
-            }
-
-            div {
-                min-width: 45%;
-
-                input,
-                button {
-                    padding: 0.75rem 1.5rem;
-                }
-
-                input {
-                    box-shadow: $card-shadow;
-                }
-            }
-        }
-    }
-
-    .background-style {
-        position: relative;
-        background: $white-2;
-        box-shadow: $card-shadow;
-        border-radius: 0.5rem;
-
-        & {
             @media screen and (max-width:576px) {
-                width: 90%;
-                margin-left: auto;
-                margin-right: auto;
+                margin: 6rem auto;
+            }
+
+            .email-subscription {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin: auto;
+                padding: 3.75rem 1rem;
+
+                @media screen and (min-width:992px) {
+                    width: 80%;
+                }
+
+                h5 {
+                    color: $color-1;
+                }
+
+                div {
+                    min-width: 45%;
+
+                    input,
+                    button {
+                        padding: 0.75rem 1.5rem;
+                    }
+
+                    input {
+                        box-shadow: $card-shadow;
+                    }
+                }
             }
         }
 
-        &::before,
-        &::after {
-            content: '';
+        .background-style {
+            position: relative;
+            background: $white-2;
+            box-shadow: $card-shadow;
+            border-radius: 0.5rem;
+
+            & {
+                @media screen and (max-width:576px) {
+                    width: 90%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+
+            &::before,
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                border-radius: .5rem;
+                z-index: -1;
+            }
+
+            &::before {
+                background: linear-gradient(93.33deg, rgba(37, 34, 98, 0.75) 0%, rgba(16, 101, 162, 0.75) 100%);
+                transform: rotate(-3deg);
+
+            }
+
+            &::after {
+                background: linear-gradient(93.33deg, rgba(37, 34, 98, 0.25) 0%, rgba(16, 101, 162, 0.25) 100%);
+                transform: rotate(-6deg);
+            }
+        }
+    }
+
+    footer {
+        position: relative;
+        background-image: url('../images/footer.png');
+        background-size: cover;
+        background-position: top;
+        clip-path: ellipse(110% 100% at 50% 100%);
+        padding-top: 3.5rem;
+
+        button {
+            background-color: $white-2;
             position: absolute;
             top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            border-radius: .5rem;
-            z-index: -1;
+            left: 50%;
+            transform: translate(-50%, 0);
+            width: 4.5rem;
+            height: 2.25rem;
+            border: 0;
+            border-radius: 0px 0px 70px 70px;
         }
 
-        &::before {
-            background: linear-gradient(93.33deg, rgba(37, 34, 98, 0.75) 0%, rgba(16, 101, 162, 0.75) 100%);
-            transform: rotate(-3deg);
+        .col-lg-4 {
+            h6 {
+                font-weight: 900;
+                background: linear-gradient(180deg, #FFFFFF 21.3%, #74F7FF 100%, #FF00D6 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-shadow: 0px 4px 16px rgba(25, 52, 107, 0.5);
+                letter-spacing: 0.2em;
+                line-height: 54px;
+            }
 
+            p {
+                color: rgba(221, 221, 221, 0.8);
+            }
+
+            .symbol {
+                border: 1px solid rgba(255, 255, 255, 0.5);
+                border-radius: .5rem;
+                padding: .875rem;
+
+                &:not(:last-child) {
+                    margin-right: 1.5rem;
+                }
+
+                img {
+                    filter: drop-shadow(0px 4px 24px rgba(25, 52, 107, 0.25));
+                }
+            }
         }
 
-        &::after {
-            background: linear-gradient(93.33deg, rgba(37, 34, 98, 0.25) 0%, rgba(16, 101, 162, 0.25) 100%);
-            transform: rotate(-6deg);
+        li {
+            color: #DDDDDD;
+
+            a {
+                display: block;
+                text-decoration: none;
+                text-transform: capitalize;
+                color: inherit;
+
+                &:hover {
+                    color: #FFFFFF;
+                }
+            }
+        }
+
+        .copyright {
+            margin-top: 2rem;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(1.25rem);
+
+            small {
+                color: #dddddd;
+            }
         }
     }
 
 }
 
-footer {
-    .copyright {
-        background: rgba(0, 0, 0, 0.7);
-        backdrop-filter: blur(1.25rem);
-
-        small {
-            color: #dddddd;
-        }
-    }
-}
 
 .card,
 .card-hover {
