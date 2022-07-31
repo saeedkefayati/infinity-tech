@@ -496,6 +496,20 @@ body {
         clip-path: ellipse(110% 100% at 50% 100%);
         padding-top: 3.5rem;
 
+        & {
+            @media screen and (max-width:992px) {
+                clip-path: ellipse(150% 100% at 50% 100%);
+            }
+
+            @media screen and (max-width:768px) {
+                clip-path: ellipse(180% 100% at 50% 100%);
+            }
+
+            @media screen and (max-width:576px) {
+                clip-path: ellipse(220% 100% at 50% 100%);
+            }
+        }
+
         button {
             background-color: $white-2;
             position: absolute;
